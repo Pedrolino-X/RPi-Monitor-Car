@@ -1,0 +1,9 @@
+numpy==1.21.6
+opencv_contrib_python==4.10.0.84
+opencv_python==4.10.0.84
+paramiko==3.5.0
+PyQt5==5.15.11
+PyQt5_sip==12.13.0
+qt_material==2.14
+scp==0.15.0
+vtk==8.1.2

@@ -1,0 +1,24 @@
+# PyCharm/JetBrains IDE config
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# PyInstaller build files
+build/
+dist/
+*.spec
+
+# Executables and archives
+*.exe
+*.zip
+*.rar
+*.pmfx
+
+# User-specific files
+/上位机软件代码/yandiansai/Camera_Photos/
+
+# Ignore specific sensitive files by name
+Diskgenius_Pro_x64_5.5.0.1488_cn.exe
+RPiCC_MonitorCar_SystemImage_Final_20250714_Archived.pmfx

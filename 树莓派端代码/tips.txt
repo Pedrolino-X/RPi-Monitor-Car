@@ -1,0 +1,33 @@
+原start-ap.sh和start-wifi.sh方法已不可用，更新为更加稳定的NetworkManager方法。
+
+
+
+你的新（且正确的）工作流程
+
+
+   1. 首次设置:
+       * 在终端里运行一次我之前给你的 sudo nmcli connection add ...
+         命令来创建AP配置。
+       * 运行 sudo ./enable-autostart.sh 来允许 server.py 被
+         NetworkManager 控制。
+
+
+   2. 切换到AP模式 (会断开当前网络):
+       * 运行 sudo ./start-ap.sh。
+       * 这会断开你的WiFi，启动AP热点，然后 NetworkManager
+         会自动触发调度器脚本来启动你的 server.py。
+           * WiFi名称 (SSID): MyPiAP
+           * 密码: raspberry
+	   * 可以用上位机电脑连接到这个网络
+如需连接SSH调试，主机IP为 192.168.12.1。用户名为user0000，密码0000.
+
+   3. 切换回WiFi模式:
+       * 用另一台设备连接到 MyPiAP 热点，SSH到树莓派上。
+       * 运行 sudo ./start-wifi.sh。
+       * 这会关闭AP热点，停止 server.py，并重新连接到你的WiFi。
+
+
+   4. 禁用自启:
+       * 运行 sudo 
+         ./disable-autostart.sh。之后，切换网络模式将不再会自动启动/停止
+         server.py。
