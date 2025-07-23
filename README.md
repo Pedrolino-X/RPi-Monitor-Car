@@ -19,11 +19,11 @@ A smart inspection car system based on Raspberry Pi 5 and a PC client, designed 
 ## 核心功能 / Core Features
 
 **车载端 (Raspberry Pi):**
-- **🚗 运动控制 (Motion Control):** 精确控制直流电机，实现前进、后退及转向。
+- **🚗 运动控制 (Motion Control):** 控制直流电机，实现前进、后退及转向。
 - **🧭 姿态感知 (Attitude Sensing):** 集成IMU（JY901S），实时获取并回传车辆的三轴姿态角、温度等数据。
 - **📹 视觉采集 (Visual Capture):** 通过摄像头捕捉高清实时视频流，并支持远程拍照。
 - **🦾 简易机械臂 (Simple Robotic Arm):** 控制两个舵机，执行预设的抓取或调整动作。
-- **📡 无线通信 (Wireless Communication):** 内置TCP服务器，稳定接收PC指令并回传数据。支持AP（热点）和STA（客户端）两种网络模式。
+- **📡 无线通信 (Wireless Communication):** 内置TCP服务器，稳定接收PC指令并回传数据。车载端支持AP（热点）模式用于常规操作，以及STA（客户端）模式用于开发调试。
 
 **上位机 (PC Client):**
 - **🖥️ 图形化界面 (GUI):** 基于PyQt构建，提供直观的控制与数据显示界面。
@@ -31,7 +31,7 @@ A smart inspection car system based on Raspberry Pi 5 and a PC client, designed 
 - **📊 实时监控 (Real-time Monitoring):**
   - 左侧窗口实时显示摄像头回传的视频流。
   - 中间仪表盘动态可视化展示车辆的俯仰、横滚、偏航角度。
-  - 右侧窗口通过VTK加载3D模型，同步模拟车辆姿态。
+  - 右侧窗口通过VTK加载并显示3D模型。
 - **📂 自动文件同步 (Auto File Sync):** 后台服务通过SCP协议自动下载车载端拍摄的照片到本地，方便查看和管理。
 
 ---
