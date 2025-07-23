@@ -1,4 +1,4 @@
-# RPi Smart Inspection Car / 智能管道巡检车
+# RPi Monitor Car / 管道巡检车
 
 <p align="center">
   <img src="上位机运行图.jpg" alt="PC Client Interface" width="800"/>
@@ -10,9 +10,9 @@
   <a href="#"><img src="https://img.shields.io/badge/Platform-Raspberry%20Pi%20%7C%20Windows-orange.svg" alt="Platform"></a>
 </p>
 
-A smart inspection car system based on Raspberry Pi 5 and a PC client, designed for remote visual inspection in narrow environments like pipelines.
+A inspection car system based on Raspberry Pi 5 and a PC client, designed for remote visual inspection in narrow environments like pipelines.
 
-一个基于树莓派5和PC上位机的智能巡检车系统，旨在实现对管道等狭窄环境的远程可视化巡检。
+一个基于树莓派5和PC上位机的巡检车系统，旨在实现对管道等狭窄环境的远程可视化巡检。
 
 ---
 
